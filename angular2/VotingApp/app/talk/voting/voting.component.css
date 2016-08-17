@@ -1,0 +1,49 @@
+StackLayout{
+  margin-top: 20;
+  horizontal-align: center;
+}
+Label{
+  width: 70;
+  height: 70;
+  margin-bottom: 20;
+  border-radius: 37;
+  border-width: 4;
+  border-color: #dbdb00;
+  background-color: #ffff00;
+  background: -moz-radial-gradient(#ffff00 0%, #ebeb00 100%);
+  background: -webkit-radial-gradient( #ffff00 0%,#ebeb00 100%);
+  background: radial-gradient( #ffff00 0%,#ebeb00 100%);
+  color: #3A3A3A;
+  font-size: 38;
+  padding-top: 2;
+  text-align: center;
+  line-height: 39;
+}
+
+.top{
+  background-color: green;
+  border-color: darkgreen;
+  color: white;
+}
+
+.meh{
+  background-color: red;
+  border-color: darkred;
+  color: white;
+}
+
+.animate{
+  animation-name: animation;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes animation {
+  from {
+    opacity: 1;
+    transform: scale(1,1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0,0);
+  }
+}

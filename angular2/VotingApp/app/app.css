@@ -1,0 +1,55 @@
+﻿button, voting, stack-layout {
+    horizontal-align: center;
+    vertical-align: center;
+}
+
+label, stack-layout {
+    horizontal-align: left;
+}
+
+.list-link {
+    border: none;
+    border-width: 0;
+    background-color: transparent;
+}
+
+.list-link.about{
+    vertical-align: bottom;
+    margin-bottom: 10;
+}
+
+.inline-link {
+    text-decoration: underline;
+    color: #3070dd;
+    font-weight: bold;
+    horizontal-align: center;
+}
+
+.topLayout {
+    vertical-align: top;
+    margin: 10;
+    height: 100%;
+}
+
+.title {
+    font-size: 30;
+    margin-bottom: 10;
+    color: #0f0ff0;
+}
+
+.speaker {
+    font-size: 20;
+}
+
+.speaker-small {
+    font-size: 12;
+}
+
+.talk-title {
+    font-size: 22;
+    color: #333333;
+}
+
+.abstract {
+    font-size: 18;
+}

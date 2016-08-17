@@ -1,0 +1,15 @@
+<ActionBar title="Voting App">
+    <NavigationButton text="Zurück" android.systemIcon="ic_menu_back"
+                      (tap)="goBack()"></NavigationButton>
+</ActionBar>
+<StackLayout class="topLayout">
+    <Label text="About" class="title"></Label>
+    <Label [textWrap]="true" class='talk-title' text="Beispielanwendung für NativeScript mit Angular 2 RC4">
+    </Label>
+    <Label [textWrap]="true" text="Der Sourcecode dieser Anwendung ist verfügbar auf GitHub:">
+    </Label>
+    <Label [text]='"GitHub Repo"' (tap)="openExternalUrl()" class="inline-link"></Label>
+    <Label [textWrap]="true" class="abstract" text="Developed by trion">
+    </Label>
+    <voting [initialRating]=" talk?.rating" (rated)="talkRated($event)"></voting>
+</StackLayout>

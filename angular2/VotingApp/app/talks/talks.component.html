@@ -1,0 +1,15 @@
+<StackLayout class="topLayout">
+    <Label text="Vorträge" class="title"></Label>
+    <ListView [items]="talks">
+        <template let-item="item" let-i="index">
+            <GridLayout columns="*, auto" rows="auto, auto">
+                <Label row="0" col="0" [textWrap]="true" text="{{item?.title}}">
+                </Label>
+                <Label row="1" col="0" class="speaker-small" text="({{item?.speaker}})">
+                </Label>
+                <Button row="0" col="1" rowSpan="2" [text]='"->"' [nsRouterLink]="['/talks/',''+item.id]"
+                        pageTransition="slide" class="list-link"></Button>
+            </GridLayout>
+        </template>
+    </ListView>
+</StackLayout>

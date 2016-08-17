@@ -1,0 +1,10 @@
+<StackLayout>
+
+<Label *ngFor="let rating of ratings"
+     [class]="rating||''"
+     [class.animate]="isHidden(rating)"
+     (tap)="switchRating(rating)"
+     [text]="smileys[rating]">
+</Label>
+
+</StackLayout>
